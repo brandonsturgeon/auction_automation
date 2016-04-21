@@ -3,16 +3,37 @@ class AuctionHelper():
     """ A set of helper functions to be used across each site module """
     def __init__(self):
 
+        # We use tuples because sets aren't hashable
         real_estate_terms = (
             "real estate",
             "realestate",
             "irrigated",
             "nonirrigated",
             "non irrigated",
-            "non-irrigated"
+            "non-irrigated",
+            "land",
+            "acre",
         )
+        personal_property_terms = (
+            "tools",
+            "garden",
+            "furniture",
+            "antiques",
+            "collectable",
+            "household",
+            "appliances",
+            "glassware",
+            "lamp",
+        )
+        commercial_terms = (
+            "commercial",
+            "truck",
+        )
+
         self.auction_types = {
             "Real Estate": real_estate_terms,
+            "Personal Property": personal_property_terms,
+            "Commercial": commercial_terms,
         }
 
     def determine_auction_type(self, text):
@@ -24,8 +45,9 @@ class AuctionHelper():
         # TODO: Work out this scoring system
         for auction_type, terms in self.auction_types.iteritems():
             count = 0
+            lower_text = text.lower()
             for term in terms:
-                if term in text:
+                if term in lower_text:
                     count += 1
             scores[auction_type] = count
 
