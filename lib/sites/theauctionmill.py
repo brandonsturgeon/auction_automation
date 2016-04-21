@@ -13,34 +13,40 @@ class TheAuctionMill():
     def get_location(self, text):
         """ Given the expected format of text, extracts the Location """
         try:
-            location = re.search(r'Location: (.*) (?:Begins|Began):', text).group(1)
+            location = re.search(r'Location: (.*?) (?:Begins|Began):', text).group(1)
         except (AttributeError, IndexError) as e:
-            location = "Unknown"
-            print "Error! Unable to find Location with Regex"
-            print text
-            print e
+            if "online" in text.lower():
+                location = "Online Only"
+            else:
+                location = "Unknown"
+                print "Error! Unable to find Location with Regex"
+                print text
+                print e
+                print ""
         return location
 
     def get_begin_time(self, text):
         """ Given the expected format of text, extracts the Begin Time """
         try:
-            auction_begin = re.search(r'(?:Begins|Began): (.*) (?:Ends:|$)', text).group(1)
+            auction_begin = re.search(r'(?:Begins|Began): (.*?)(?:Ends:|$)', text).group(1)
         except (AttributeError, IndexError) as e:
             auction_begin = "Unknown"
             print "Error! Unable to find Begin Time with Regex"
             print text
             print e
+            print ""
         return auction_begin
 
     def get_end_time(self, text):
         """ Given the expected format of text, extracts the End Time (if present) """
         try:
-            auction_end = re.search(r'Ends:(.*)$', text).group(1)
+            auction_end = re.search(r'Ends:(.*?)$', text).group(1)
         except (AttributeError, IndexError) as e:
             auction_end = "Unknown"
             print "Error! Unable to find End Time with Regex"
             print text
             print e
+            print ""
         return auction_end
 
     def process_page(self, soup):
