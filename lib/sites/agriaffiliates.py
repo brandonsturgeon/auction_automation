@@ -2,7 +2,7 @@
 class Agriaffiliates():
     """ Module for the http://www.agriaffiliates.com site """
     def __init__(self, auction_helper):
-        self.base_url = "http://www.agriaffiliates.com/"
+        self.base_url = "http://www.agriaffiliates.com"
         self.url = "http://www.agriaffiliates.com/properties.php?Type=Auction"
         self.AuctionHelper = auction_helper
 
@@ -21,7 +21,7 @@ class Agriaffiliates():
             auction_data = auction.find("td", {"class":"propRight"})
 
             auction_title = auction_data.find("a").text
-            more_info_link = self.base_url + auction_data.find("a").get("href")
+            more_info_link = "{}/{}".format(self.base_url, auction_data.find("a").get("href"))
             # For easy url usage
             more_info_link = more_info_link.replace(" ", "%20")
 
