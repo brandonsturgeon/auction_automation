@@ -16,8 +16,12 @@ class AuctionHelper():
         }
 
     def determine_auction_type(self, text):
+        """ Analyzes a given block of text to try and determine what kind of auction
+            it is based on keywords. Uses a scoring system to determine most likely
+            auction type. Returns a string with the best-guess auction type, or 'Unknown' """
         scores = {}
 
+        # TODO: Work out this scoring system
         for auction_type, terms in self.auction_types.iteritems():
             count = 0
             for term in terms:
