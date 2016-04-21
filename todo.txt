@@ -25,9 +25,9 @@ http://www.catesauction.com/auctions/all-auctions/ -- Cates Auction and Realty C
 
 http://www.theauctionmill.com/ -- The Auction Mill
 
-http://www.rgauctions.net/ -- Grubaugh Auction Service
+http://www.rgauctions.net/ -- Grubaugh Auction Service // Likely not possible to scrape
 
-http://www.wieckauction.com/ -- Tom Wieck Realty and Auction
+http://www.wieckauction.com/ -- Tom Wieck Realty and Auction // No auctions, check back
 
 http://www.schowauction.com/ -- Schow Auction Service
 
