@@ -1,3 +1,5 @@
+from bs4 import BeautifulSoup
+import requests
 
 class AuctionHelper():
     """ A set of helper functions to be used across each site module """
@@ -24,6 +26,8 @@ class AuctionHelper():
             "appliances",
             "glassware",
             "lamp",
+            "vanity",
+            "shower",
         )
         commercial_terms = (
             "commercial",
@@ -64,3 +68,10 @@ class AuctionHelper():
         if scores[highest] == 0:
             return "Unknown"
         return highest
+
+    def get_direct_link_soup(self, link):
+        """ Takes an external link and returns a parsed soup """
+        req = requests.get(link)
+        content = req.text
+        soup = BeautifulSoup(content, "lxml")
+        return soup

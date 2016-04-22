@@ -8,6 +8,7 @@ PP = pprint.PrettyPrinter(indent=4)
 # Site Imports
 from lib.sites.agriaffiliates import Agriaffiliates
 from lib.sites.theauctionmill import TheAuctionMill
+from lib.sites.helbergnussauction import HelbergNussAuction
 
 # Helper Imports
 from lib.sites.helpers.auction_helper import AuctionHelper
@@ -19,7 +20,8 @@ class Main():
         # Set of site modules
         self.sites = {
             Agriaffiliates,
-            TheAuctionMill
+            TheAuctionMill,
+            HelbergNussAuction,
         }
         # Generate an instance of each module and
         # provide it with an instance of the helper class
