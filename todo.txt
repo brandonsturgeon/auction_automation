@@ -23,13 +23,13 @@ http://www.catesauction.com/auctions/all-auctions/ -- Cates Auction and Realty C
 
 -- Premium Upgraded Auction Firms
 
-http://www.theauctionmill.com/ -- The Auction Mill
+http://www.theauctionmill.com/ -- The Auction Mill                                 // Done
 
-http://www.rgauctions.net/ -- Grubaugh Auction Service // Likely not possible to scrape
+http://www.rgauctions.net/ -- Grubaugh Auction Service                             // Likely not possible to scrape
 
-http://www.wieckauction.com/ -- Tom Wieck Realty and Auction // No auctions, check back
+http://www.wieckauction.com/ -- Tom Wieck Realty and Auction                       // No auctions, check back
 
-http://www.schowauction.com/ -- Schow Auction Service
+http://www.schowauction.com/ -- Schow Auction Service                              // Little to no information
 
 http://www.helbergnussauction.com/ -- Helberg and Nuss Auctions & Realty
 
