@@ -9,6 +9,7 @@ PP = pprint.PrettyPrinter(indent=4)
 from lib.sites.agriaffiliates import Agriaffiliates
 from lib.sites.theauctionmill import TheAuctionMill
 from lib.sites.helbergnussauction import HelbergNussAuction
+from lib.sites.catesauction import CatesAuction
 
 # Helper Imports
 from lib.sites.helpers.auction_helper import AuctionHelper
@@ -22,6 +23,7 @@ class Main():
             Agriaffiliates,
             TheAuctionMill,
             HelbergNussAuction,
+            CatesAuction,
         }
         # Generate an instance of each module and
         # provide it with an instance of the helper class
