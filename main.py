@@ -25,7 +25,7 @@ class Main():
         }
         # Generate an instance of each module and
         # provide it with an instance of the helper class
-        self.sites = [x(self.auction_helper) for x in self.sites]
+        self.sites = [site(self.auction_helper) for site in self.sites]
 
         self.processed_auctions = {}
 
