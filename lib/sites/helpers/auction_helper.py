@@ -15,6 +15,12 @@ class AuctionHelper():
             "non-irrigated",
             "land",
             "acre",
+            "home",
+            "bedroom",
+            "bathroom",
+            "ranch",
+            "hardwood floors",
+            "kitchen",
         )
         personal_property_terms = (
             "tools",
@@ -28,10 +34,14 @@ class AuctionHelper():
             "lamp",
             "vanity",
             "shower",
+            "personal property",
         )
         commercial_terms = (
             "commercial",
             "truck",
+            "tenants",
+            "office",
+            "retail",
         )
 
         self.auction_types = {
