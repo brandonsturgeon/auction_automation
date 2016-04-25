@@ -1,4 +1,3 @@
-from bs4 import BeautifulSoup
 
 class HelbergNussAuction():
     """ Module for the http://www.helbergnussauction.com site """
