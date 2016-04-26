@@ -5,6 +5,7 @@ class PurpleWave():
         self.base_url = "https://www.purplewave.com"
         self.url = "https://www.purplewave.com"
         self.AuctionHelper = auction_helper
+        self.require_js = True
 
     def clean_up(self, text):
         """ Takes a string and encodes it to utf-8, gets rid of excess spaces/tabs """
@@ -33,9 +34,6 @@ class PurpleWave():
             # Very Flaky
             _auction_time = auction.find("div", {"class": "col-xs-12 col-md-5 auction-date"})
             auction_time = self.clean_up(_auction_time.text)
-
-            # Find the type of auction
-            auction_type = self.determine_auction_type(auction_title)
 
             # DEFAULTS
             auction_location = "Online Only"

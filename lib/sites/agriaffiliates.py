@@ -5,6 +5,7 @@ class Agriaffiliates():
         self.base_url = "http://www.agriaffiliates.com"
         self.url = "http://www.agriaffiliates.com/properties.php?Type=Auction"
         self.AuctionHelper = auction_helper
+        self.require_js = False
 
     def process_page(self, soup):
         print "Processing {}".format(self.url)

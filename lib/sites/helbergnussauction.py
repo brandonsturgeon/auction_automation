@@ -5,6 +5,7 @@ class HelbergNussAuction():
         self.base_url = "http://www.helbergnussauction.com"
         self.url = "http://www.helbergnussauction.com/auctions.php"
         self.AuctionHelper = auction_helper
+        self.require_js = False
 
     def chunks(self, l, n):
         """Yield successive n-sized chunks from l."""

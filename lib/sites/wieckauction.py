@@ -5,6 +5,7 @@ class WieckAuction():
         self.base_url = "http://www.wieckauction.com"
         self.url = "http://www.wieckauction.com/auctions/"
         self.AuctionHelper = auction_helper
+        self.require_js = False
 
     def determine_auction_type(self, text):
         return self.AuctionHelper.determine_auction_type(text)
