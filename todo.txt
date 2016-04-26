@@ -37,13 +37,13 @@ http://www.catesauction.com/ -- Cates Auction                                   
 
 https://www.purplewave.com/ -- Purple Wave                                         // Done
 
-http://www.simnittauction.com/ -- Siminitt Bros. Auctions
+http://www.simnittauction.com/ -- Siminitt Bros. Auctions                          // Not Possible to scrape, maybe can collect images and forward them
 
-http://www.hamitauction.com/ -- Hamit Land and Auction Inc.
+http://www.hamitauction.com/ -- Hamit Land and Auction Inc.                        // Likely impossible to scrape
 
-http://www.frrmail.com/ -- Farm & Ranch Realty Inc.
+http://www.frrmail.com/ -- Farm & Ranch Realty Inc.                                // Can't scrape useful information
 
-http://www.midwestauctions.com/ostby/_private/index.html -- Ostby Auctioneering
+http://www.midwestauctions.com/ostby/_private/index.html -- Ostby Auctioneering    // Likely can't scrape
 
 http://www.wiemanauction.com/ -- Wieman Land & Auction
 
