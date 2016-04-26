@@ -10,6 +10,7 @@ from lib.sites.agriaffiliates import Agriaffiliates
 from lib.sites.theauctionmill import TheAuctionMill
 from lib.sites.helbergnussauction import HelbergNussAuction
 from lib.sites.catesauction import CatesAuction
+from lib.sites.wieckauction import WieckAuction
 
 # Helper Imports
 from lib.sites.helpers.auction_helper import AuctionHelper
@@ -24,6 +25,7 @@ class Main():
             TheAuctionMill,
             HelbergNussAuction,
             CatesAuction,
+            WieckAuction,
         }
         # Generate an instance of each module and
         # provide it with an instance of the helper class
