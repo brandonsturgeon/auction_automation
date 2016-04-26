@@ -27,17 +27,13 @@ class HelbergNussAuction():
         auctions = []
 
         container = soup.find("div", {"id": "html1"})
-        print container
         print "__________"
         container = container.find("table")
-        print container
-        print ""
 
         auction_rows = container.find_all("font")
 
         for auction in self.chunks(auction_rows, 3):
 
-            print auction
 
             auction_text = [str(x.text) for x in auction]
             auction_title = auction_text[0]
