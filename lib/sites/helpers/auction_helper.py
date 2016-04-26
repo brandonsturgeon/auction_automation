@@ -35,6 +35,8 @@ class AuctionHelper():
             "vanity",
             "shower",
             "personal property",
+            "seized",
+            "asset",
         )
         commercial_terms = (
             "commercial",
@@ -42,6 +44,10 @@ class AuctionHelper():
             "tenants",
             "office",
             "retail",
+            "ag",
+            "construction",
+            "equipment",
+            "trailer"
         )
 
         self.auction_types = {
