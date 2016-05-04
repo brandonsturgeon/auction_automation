@@ -45,9 +45,9 @@ http://www.frrmail.com/ -- Farm & Ranch Realty Inc.                             
 
 http://www.midwestauctions.com/ostby/_private/index.html -- Ostby Auctioneering    // Likely can't scrape
 
-http://www.wiemanauction.com/ -- Wieman Land & Auction
+http://www.wiemanauction.com/ -- Wieman Land & Auction                             // Done -- Very little info
 
-http://www.landbrokersne.com/ -- Land Brokers
+http://www.landbrokersne.com/ -- Land Brokers                                      // Possible to scrape with limited information
 
 http://www.girardauction.com/ -- Girard Auction & Land Brokers
 
