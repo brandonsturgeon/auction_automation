@@ -14,6 +14,7 @@ from lib.sites.catesauction import CatesAuction
 from lib.sites.wieckauction import WieckAuction
 from lib.sites.purplewave import PurpleWave
 from lib.sites.wiemanauction import WiemanAuction
+from lib.sites.girardauction import GirardAuction
 
 # Helper Imports
 from lib.sites.helpers.auction_helper import AuctionHelper
@@ -31,6 +32,7 @@ class Main():
             WieckAuction,
             PurpleWave,
             WiemanAuction,
+            GirardAuction,
         }
         # Generate an instance of each module and
         # provide it with an instance of the helper class
