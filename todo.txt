@@ -49,7 +49,7 @@ http://www.wiemanauction.com/ -- Wieman Land & Auction                          
 
 http://www.landbrokersne.com/ -- Land Brokers                                      // Possible to scrape with limited information
 
-http://www.girardauction.com/ -- Girard Auction & Land Brokers
+http://www.girardauction.com/ -- Girard Auction & Land Brokers                     // Done -- Little info
 
 http://www.suttonauction.com/ -- Chuck Sutton Auction Service
 
